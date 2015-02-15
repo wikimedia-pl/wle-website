@@ -5,14 +5,20 @@
   width:auto;
 }
 
-body {
-  padding-top:50px;
-  color:#646464;
-  background-color:#efefef;
+html {
+  position: relative;
+  min-height: 100%;
 }
 
-h1,h2,h3,.highlight,.navbar a,#masthead h4 {
-  font-family:'Oswald',arial narrow,sans-serif;
+body {
+  color:#646464;
+  background-color:#efefef;
+  margin-bottom: 60px;
+  min-width: 750px;
+}
+
+body,h1,h2,h3,.highlight,.navbar a,#masthead h4 {
+  font-family: 'Roboto', sans-serif;
 }
 
 footer {
@@ -26,16 +32,39 @@ footer {
 
 
 #masthead {
-  min-height:199px;
-  background-color:#000044;
+  position: relative;
+  background: url(../img/bg.jpg) center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color:#aaaacc;
 }
 
+#masthead .bg-gradient {
+ position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(135deg,#26744D,#484848);
+  opacity: .6;
+}
+
+#masthead .logo {
+  position: absolute;
+  width: 200px;
+  top: 0;
+  right: 25px;
+  z-index: 10;
+}
+
 #masthead h1 {
-  font-size: 55px;
+  font-size: 44px;
+  letter-spacing: -1px;
+  font-weight: bold;
   line-height: 1;
   color:#fefeff;
   margin-top:50px;
+  margin-bottom: 40px;
 }
 
 #masthead .well {
@@ -73,12 +102,6 @@ a,a:hover {
 
 .icon-bar {
   background-color:#fff;
-}
-
-@media screen and (min-width: 768px) {
-  #masthead h1 {
-    font-size: 80px;
-  }
 }
 
 .navbar-bright {
@@ -119,6 +142,7 @@ a,a:hover {
 .panel {
   border-color:transparent;
   border-radius:0;
+  box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.26);
 }
 
 .thumbnail {
@@ -165,3 +189,38 @@ a,a:hover {
 .btn-twitter:hover {background-color:#3088FF;color:#62BBFF;}
 .btn-facebook:hover {background-color:#2A4998;color:#4C6BBA;}
 .btn-google-plus:hover {background-color:#C23836;color:#E45A58;}
+
+.lead {
+  font-size: 21px;
+}
+
+.row .col-md-12 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.panel-body p {
+  font-size: 16px;
+  line-height: 1.6em;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.panel-body p.intro {
+  padding-right: 210px;
+  font-size: 20px;
+  line-height: 1.6em;
+  padding-bottom: 20px;
+}
+
+
+.footer {
+  position: absolute;
+  margin-top: 10px;
+  padding-top: 10px;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
