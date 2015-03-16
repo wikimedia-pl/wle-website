@@ -14,7 +14,6 @@ body
     color: #333;
 }
 
-
 h1, h2, h3
 {
     margin: 0;
@@ -72,6 +71,17 @@ a:hover {
 
 .pull-center {
     text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        font-size: 10pt;
+    }
+    
+    .container p,
+    .container li {
+        font-size: 12pt;
+    }
 }
 
 /*********************************************************************************/
@@ -545,6 +555,10 @@ ul.contact li a:before
     display: inline-block;
     text-align: center;
     vertical-align: top;
+}
+
+.col img {
+    max-width: 100%;
 }
 
 .col h3 {
