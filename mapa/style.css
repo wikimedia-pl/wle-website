@@ -79,6 +79,29 @@ body {
     color: #fff;
 }
 
+.leaflet-popup {
+  color: #000;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.leaflet-popup h3 {
+  margin: 0;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 4px;
+}
+
+.btn {
+  padding: 5px;
+  background: #8DCB89;
+  border-radius: 4px;
+  border: 0;
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #fff;
+}
+
 footer {
     background: rgba(143, 197, 141, 1);
     height: 29px;
